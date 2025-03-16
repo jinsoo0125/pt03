@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>미스사이공</title>
+
+    <link rel="stylesheet" href="./lib/css/reset.css">
+    <link rel="stylesheet" href="./lib/css/fonts.css">
+    <link rel="stylesheet" href="./lib/css/base.css">
+    <link rel="stylesheet" href="./lib/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./lib/css/aos.css">
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <script src="./lib/js/jquery-1.12.4.js"></script>
+    <script src="./lib/js/swiper-bundle.min.js"></script>
+    <script src="./js/custom.js"></script>
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="header_wrap">
+            <h1>
+                <a href="/"><img src="./images/logo.png" alt="미스사이공"></a>
+            </h1>
+            <nav class="gnb">
+                <ul>
+                    <li>
+                        <a href="">브랜드 소개</a>
+                        <ul>
+                            <li><a href="">브랜드 스토리</a></li>
+                            <li><a href="">오시는 길</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">메뉴 소개</a>
+                        <ul>
+                            <li><a href="">쌀국수</a></li>
+                            <li><a href="">식사</a></li>
+                            <li><a href="">사이드</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">매장 정보</a>
+                        <ul>
+                            <li><a href="">매장찾기</a></li>
+                            <li><a href="">점주인터뷰</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">창업 안내</a>
+                        <ul>
+                            <li><a href="">가맹절차</a></li>
+                            <li><a href="">가맹점 개설 비용</a></li>
+                            <li><a href="">자주하는 질문</a></li>
+                            <li><a href="">상담신청</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">커뮤니티</a>
+                        <ul>
+                            <li><a href="">소식</a></li>
+                            <li><a href="">고객의 소리</a></li>
+                            <li><a href="">채용정보</a></li>
+                            <li><a href="">이벤트</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <button class="mbtn">
+                <span>
+                    <em class="blind">mobile menu button</em>
+                </span>
+            </button>
+            <div class="utils">
+                <a href="">
+                    <svg width="24" height="24" fill="none" stroke="var(--b-color)" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <use href="./lib/images/feather-sprite.svg#search" />
+                    </svg>
+                </a>
+
+            </div>
+        </div>
+    </header>
+
+
+    <main id="content">
+        <section class="main_visual">
+            <h2 class="blind">main visual</h2>
+            <div class="slg">
+                <strong>베트남의 맛을 그대로 담은 한 접시</strong>
+                <p>신선한 재료와 깊은 풍미로 매일 제공되는 베트남 요리를 만나보세요.</p>
+
+            </div>
+            <div class="main_visual_slide swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide itm itm01"></div>
+                    <div class="swiper-slide itm itm02"></div>
+                    <div class="swiper-slide itm itm03"></div>
+                </div>
+            </div>
+            <div class="scroll">
+                <span>scroll</span>
+            </div>
+        </section>
+        <section class="main_menu default">
+            <h2 class="blind">main menu</h2>
+            <div class="title">
+                <h2>메뉴 소개</h2>
+                <p class="desc">영양이 풍부한 재료로 꽉 채운 건강한 한끼, 미스사이공의 메뉴를 소개합니다.</p>
+            </div>
+            <ul class="tabcon_all_menu inner">
+                <li><button class="on">쌀국수</button></li>
+                <li><button>식 사</button></li>
+                <li><button>사이드</button></li>
+            </ul>
+            <div class="main_menu_wrap">
+                <div class="con on">
+                    <div class="main_menu_slide01 swiper">
+                        <div class="swiper-wrapper">
+                            <div class="itm swiper-slide">
+                                <div class="img_box">
+                                    <img src="./images/main_content01.png" alt="미스사이공">
+                                </div>
+                                <strong>사골 쌀국수</strong>
+                                <span>진한사골 육수에 소고기가 올라가 든든한 한끼! 사골쌀국수</span>
+                            </div>
+
+                            <div class="itm swiper-slide">
+                                <div class="img_box">
+                                    <img src="./images/main_content02.png" alt="미스사이공">
+                                </div>
+                                <strong>매운 쌀국수</strong>
+                                <span>물육수와 크랩볼과 새우볼을 한 그릇에 담아 얼큰하고 시원한 매운쌀국수</span>
+                            </div>
+
+                            <div class="itm swiper-slide">
+                                <div class="img_box">
+                                    <img src="./images/main_content03.png" alt="미스사이공">
+                                </div>
+                                <strong>얼큰 쌀국수</strong>
+                                <span>짬뽕스타일의 진하고 얼큰한 육수에 돼지고기토핑이 어우러진 얼큰쌀국수</span>
+                            </div>
+
+                            <div class="itm swiper-slide">
+                                <div class="img_box">
+                                    <img src="./images/main_content04.png" alt="미스사이공">
+                                </div>
+                                <strong>사이공쌀국수</strong>
+                                <span>풍부한 우목심, 삼겹양지, 베트남 현지 재료를 두 번 우려내어<br> 더욱 깊은 국물을 세가지 방식으로 즐길 수 있는 대표 쌀국수</span>
+                            </div>
+
+                            <div class="itm swiper-slide">
+                                <div class="img_box">
+                                    <img src="./images/main_content05.png" alt="미스사이공">
+                                </div>
+                                <strong>마라 쌀국수</strong>
+                                <span>진한 사골육수에 미스사이공 만의 비법소스를 사용한<br> 중독성 강한 마라쌀국수</span>
+                            </div>
+
+                            <div class="itm swiper-slide">
+                                <div class="img_box">
+                                    <img src="./images/main_content06.png" alt="미스사이공">
+                                </div>
+                                <strong>분짜</strong>
+                                <span>숯불고기와 쌀국수의 환상적인 만남</span>
+                            </div>
+
+                            <div class="itm swiper-slide">
+                                <div class="img_box">
+                                    <img src="./images/main_content07.png" alt="미스사이공">
+                                </div>
+                                <strong>분보싸오</strong>
+                                <span>여러가지 야채와 파인애플을 새콤달콤한 소스에 비벼먹는<br> 베트남식 비빔쌀국수</span>
+                            </div>
+
+                            <div class="itm swiper-slide">
+                                <div class="img_box">
+                                    <img src="./images/main_content08.png" alt="미스사이공">
+                                </div>
+                                <strong>사이공 볶음면</strong>
+                                <span>달콤 고소한 땅콩소스에 여러 토핑과 쌀국수를 볶아낸 볶음면</span>
+                            </div>
+
+                            <div class="itm swiper-slide">
+                                <div class="img_box">
+                                    <img src="./images/main_content09.png" alt="미스사이공">
+                                </div>
+                                <strong>분보후에</strong>
+                                <span>얼큰함과 상큼함의 이색적인 맛</span>
+                            </div>
+
+                            <div class="itm swiper-slide">
+                                <div class="img_box">
+                                    <img src="./images/main_content10.png" alt="미스사이공">
+                                </div>
+                                <strong>숯불 냉 쌀국수</strong>
+                                <span>한국인 입맛에 딱 맞는 숯불향 가득한 얼큰냉쌀국수</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="con">
+                    <div class="main_menu_slide02 swiper">
+                        <div class="swiper-wrapper">
+                            <div class="itm swiper-slide">
+                                <div class="img_box">
+                                    <img src="./images/main_content21.png" alt="미스사이공">
+                                </div>
+                                <strong>사골 쌀국수</strong>
+                                <span>진한사골 육수에 소고기가 올라가 든든한 한끼! 사골쌀국수</span>
+                            </div>
+
+                            <div class="itm swiper-slide">
+                                <div class="img_box">
+                                    <img src="./images/main_content22.png" alt="미스사이공">
+                                </div>
+                                <strong>매운 쌀국수</strong>
+                                <span>물육수와 크랩볼과 새우볼을 한 그릇에 담아 얼큰하고 시원한 매운쌀국수</span>
+                            </div>
+
+                            <div class="itm swiper-slide">
+                                <div class="img_box">
+                                    <img src="./images/main_content23.png" alt="미스사이공">
+                                </div>
+                                <strong>얼큰 쌀국수</strong>
+                                <span>짬뽕스타일의 진하고 얼큰한 육수에 돼지고기토핑이 어우러진 얼큰쌀국수</span>
+                            </div>
+
+                            <div class="itm swiper-slide">
+                                <div class="img_box">
+                                    <img src="./images/main_content24.png" alt="미스사이공">
+                                </div>
+                                <strong>사이공쌀국수</strong>
+                                <span>풍부한 우목심, 삼겹양지, 베트남 현지 재료를 두 번 우려내어<br> 더욱 깊은 국물을 세가지 방식으로 즐길 수 있는 대표 쌀국수</span>
+                            </div>
+
+                            <div class="itm swiper-slide">
+                                <div class="img_box">
+                                    <img src="./images/main_content25.png" alt="미스사이공">
+                                </div>
+                                <strong>마라 쌀국수</strong>
+                                <span>진한 사골육수에 미스사이공 만의 비법소스를 사용한<br> 중독성 강한 마라쌀국수</span>
+                            </div>
+
+                            <div class="itm swiper-slide">
+                                <div class="img_box">
+                                    <img src="./images/main_content26.png" alt="미스사이공">
+                                </div>
+                                <strong>분짜</strong>
+                                <span>숯불고기와 쌀국수의 환상적인 만남</span>
+                            </div>
+
+                            <div class="itm swiper-slide">
+                                <div class="img_box">
+                                    <img src="./images/main_content27.png" alt="미스사이공">
+                                </div>
+                                <strong>분보싸오</strong>
+                                <span>여러가지 야채와 파인애플을 새콤달콤한 소스에 비벼먹는<br> 베트남식 비빔쌀국수</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="con">
+                    <div class="main_menu_slide03 swiper">
+                        <div class="swiper-wrapper">
+                            <div class="itm swiper-slide">
+                                <div class="img_box">
+                                    <img src="./images/main_content31.png" alt="미스사이공">
+                                </div>
+                                <strong>짜조</strong>
+                                <span>다진돼지고기와 야채로 어우러진 베트남 만두</span>
+                            </div>
+
+                            <div class="itm swiper-slide">
+                                <div class="img_box">
+                                    <img src="./images/main_content32.png" alt="미스사이공">
+                                </div>
+                                <strong>쉬림프 누들 샐러드</strong>
+                                <span>상큼매콤한 소스와 통통한 새우가 들어간 아삭한 누들 샐러드</span>
+                            </div>
+
+                            <div class="itm swiper-slide">
+                                <div class="img_box">
+                                    <img src="./images/main_content33.png" alt="미스사이공">
+                                </div>
+                                <strong>왕새우 튀김</strong>
+                                <span>왕새우 한 마리가 통째로!</span>
+                            </div>
+
+                            <div class="itm swiper-slide">
+                                <div class="img_box">
+                                    <img src="./images/main_content34.png" alt="미스사이공">
+                                </div>
+                                <strong>라이스 치킨텐더</strong>
+                                <span>치킨안심살로 겉은 바삭 속은 부드럽고 촉촉</span>
+                            </div>
+
+                            <div class="itm swiper-slide">
+                                <div class="img_box">
+                                    <img src="./images/main_content35.png" alt="미스사이공">
+                                </div>
+                                <strong>사이공 딤섬</strong>
+                                <span>통통한 새우와 쫄깃한 만두피가 조화로운 딤섬</span>
+                            </div>
+
+                            <div class="itm swiper-slide">
+                                <div class="img_box">
+                                    <img src="./images/main_content36.png" alt="미스사이공">
+                                </div>
+                                <strong>사이공봉</strong>
+                                <span>매콤한 양념과 칠리소스가 조화로운 사이공봉</span>
+                            </div>
+
+                            <div class="itm swiper-slide">
+                                <div class="img_box">
+                                    <img src="./images/main_content37.png" alt="미스사이공">
+                                </div>
+                                <strong>새우볼</strong>
+                                <span>통통한 새우살로 빚어진 쫀득한 맛</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="arrows">
+                    <button class="prev">
+                        <svg width="24" height="24" fill="none" stroke="var(--w-color)" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <use href="./lib/images/feather-sprite.svg#chevrons-left" />
+                        </svg>
+                    </button>
+                    <button class="next">
+                        <svg width="24" height="24" fill="none" stroke="var(--w-color)" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <use href="./lib/images/feather-sprite.svg#chevrons-right" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section class="main_news default">
+            <div class="title">
+                <h2>미스사이공 소식</h2>
+                <p class="desc">미스사이공의 다양한 소식을 만나보세요.</p>
+            </div>
+            <div class="inner">
+                <div class="main_news_slide swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <figure>
+                                <img src="./images/main_news01.jpg" alt="미스사이공">
+                            </figure>
+                            <p>420데이 이벤트</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <figure>
+                                <img src="./images/main_news02.png" alt="미스사이공">
+                            </figure>
+                            <p>일반 / 곱빼기 투표 이벤트</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <figure>
+                                <img src="./images/main_news04.png" alt="미스사이공">
+                            </figure>
+                            <p>아듀 2019! 연말 이벤트</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="arrows">
+                    <button class="prev">
+                        <svg width="24" height="24" fill="none" stroke="var(--w-color)" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <use href="./lib/images/feather-sprite.svg#chevrons-left" />
+                        </svg>
+                    </button>
+                    <button class="next">
+                        <svg width="24" height="24" fill="none" stroke="var(--w-color)" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <use href="./lib/images/feather-sprite.svg#chevrons-right" />
+                        </svg>
+                    </button>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="main_copy default">
+            <div class="title">
+                <h2>업계 매장수 1위<br>
+                    건강한 식문화를 선도하는<br> <strong>미스사이공</strong></h2>
+                <a href="" class="btn_default mt40">브랜드 스토리 보기</a>
+            </div>
+        </section>
+        <section class="main_store default">
+            <div class="title">
+                <h2>매장 안내</h2>
+                <p class="desc">
+                    주변의 가까운 미스사이공 매장을 확인해 보세요!
+                </p>
+            </div>
+            <div class="inner">
+                <div class="main_store_slide swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./images/main_store01.jpg" alt="미스사이공">
+                            <strong class="tit">구포점</strong>
+                            <div class="d_wrap"><span
+                                    class="dt">주&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;소</span><span class="dd">부산시
+                                    구포동
+                                    1261-27</span></div>
+                            <div class="d_wrap"><span class="dt">전화번호</span><span class="dd">051-991-8303</span></div>
+                            <div class="d_wrap"><span class="dt">운영시간</span><span class="dd">11:00~02:00</span></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/main_store01.jpg" alt="미스사이공">
+                            <strong class="tit">을지대점</strong>
+                            <div class="d_wrap"><span
+                                    class="dt">주&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;소</span><span class="dd">경기도
+                                    의정부시 동일로 713<br> 을지타워 209호</span></div>
+                            <div class="d_wrap"><span class="dt">전화번호</span><span class="dd">070-7363-9173</span></div>
+                            <div class="d_wrap"><span class="dt">운영시간</span><span class="dd">11:00 ~ 20:00</span></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/main_store02.jpg" alt="미스사이공">
+                            <strong class="tit">운서넙디점</strong>
+                            <div class="d_wrap"><span
+                                    class="dt">주&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;소</span><span class="dd">인천광역시
+                                    중구 넙디로 26</span></div>
+                            <div class="d_wrap"><span class="dt">전화번호</span><span class="dd">032-746-3804</span></div>
+                            <div class="d_wrap"><span class="dt">운영시간</span><span class="dd">11:00~21:00</span></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/main_store03.jpg" alt="미스사이공">
+                            <strong class="tit">천안성정점</strong>
+                            <div class="d_wrap"><span
+                                    class="dt">주&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;소</span><span class="dd">충청남도
+                                    천안시 서북구 성정공원1길 2</span></div>
+                            <div class="d_wrap"><span class="dt">전화번호</span><span class="dd">031-921-2303</span></div>
+                            <div class="d_wrap"><span class="dt">운영시간</span><span class="dd">11:00~02:00</span></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/main_store04.jpg" alt="미스사이공">
+                            <strong class="tit">구리갈매점</strong>
+                            <div class="d_wrap"><span
+                                    class="dt">주&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;소</span><span class="dd">경기
+                                    구리시 갈매중앙로 70<br> 이룸넘버원리치안 1층 115호</span></div>
+                            <div class="d_wrap"><span class="dt">전화번호</span><span class="dd">070-8211-0420</span></div>
+                            <div class="d_wrap"><span class="dt">운영시간</span><span class="dd">11:00 ~ 20:30<br>* 매주 월요일
+                                    정기휴무</span></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/main_store05.jpg" alt="미스사이공">
+                            <strong class="tit">고덕비즈밸리점</strong>
+                            <div class="d_wrap"><span
+                                    class="dt">주&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;소</span><span class="dd">서울특별시
+                                    강동구 고덕비즈밸리로 26 ,<br> 1층 A-116호 (고덕동, 강동U1센터)</span></div>
+                            <div class="d_wrap"><span class="dt">전화번호</span><span class="dd">02-6072-0560</span></div>
+                            <div class="d_wrap"><span class="dt">운영시간</span><span class="dd">11:00~02:00</span></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/main_store06.jpg" alt="미스사이공">
+                            <strong class="tit">역삼점</strong>
+                            <div class="d_wrap"><span
+                                    class="dt">주&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;소</span><span class="dd">서울시
+                                    강남구 언주로 405, 1층 107호
+                                </span></div>
+                            <div class="d_wrap"><span class="dt">전화번호</span><span class="dd">070-7661-4200</span></div>
+                            <div class="d_wrap"><span class="dt">운영시간</span><span class="dd">평일 09:00~22:00<br>토/일요일/공휴일
+                                    09:00~20:00<br>(No Break Time)</span></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/main_store07.jpg" alt="미스사이공">
+                            <strong class="tit">금촌점</strong>
+                            <div class="d_wrap"><span
+                                    class="dt">주&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;소</span><span class="dd">경기도
+                                    파주시 정담길 29, 1층 103호<br>(아동동, 윤옥빌딩)</span></div>
+                            <div class="d_wrap"><span class="dt">전화번호</span><span class="dd">031-941-4203</span></div>
+                            <div class="d_wrap"><span class="dt">운영시간</span><span class="dd">11:00~21:00<br>
+                                    (Last Order 20:30)</div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/main_store08.jpg" alt="미스사이공">
+                            <strong class="tit">송파오금점</strong>
+                            <div class="d_wrap"><span
+                                    class="dt">주&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;소</span><span class="dd">서울특별시
+                                    송파구 마천로 165,<br> 1층 (오금동)</span></div>
+                            <div class="d_wrap"><span class="dt">전화번호</span><span class="dd">02-2431-8303</span></div>
+                            <div class="d_wrap"><span class="dt">운영시간</span><span class="dd">11:00~02:00</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="arrows">
+                    <button class="prev">
+                        <svg width="24" height="24" fill="none" stroke="var(--w-color)" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <use href="./lib/images/feather-sprite.svg#chevrons-left" />
+                        </svg>
+                    </button>
+                    <button class="next">
+                        <svg width="24" height="24" fill="none" stroke="var(--w-color)" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <use href="./lib/images/feather-sprite.svg#chevrons-right" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="main_franchise default">
+            <h2 class="blind">미스사이공 프랜차이즈</h2>
+            <div class="inner content">
+                <div class="content_wrap">
+                    <div class="img_box">
+                        <img src="./images/main_franchise01.jpg" alt="" />
+                    </div>
+                    <div class="txt_box">
+                        <h3>
+                            <span>미스사이공을 함께</span>
+                            <span>이끌 준비 되셨나요?</span>
+                        </h3>
+                        <p>
+                            미스사이공은 정보공개서 기준 베트남 업계 평균 대비 뚜렷한 장점이 <br>있습니다.
+                            210% 높은 평당 매출 60% 저렴한 창업 비용, 차별화된<br>
+                            브랜딩, 현지의 맛, 착한 가격, 효율적인
+                            운영시스템.<br>따라올 수 없는 국민 쌀국수 미스사이공 입니다.</p>
+                        </p>
+                        <div class="main_franchise_box_btn">
+                            <a href="" class="btn"><span class="tx">가맹문의
+                                </span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <div class="marquee">
+            <div class="marquee_inner">
+                <div class="marquee_text">
+                    <span>Extraordinary Noodle</span>
+                    <span>Tasty</span>
+                    <span>Nutritional Complete</span>
+                    <span>Plant Based</span>
+                    <span>Super Convenient</span>
+                    <span>Healthy Planet</span>
+                    <span>Great Value</span>
+                    <span>Low Calorie</span>
+                    <span>miss 420</span>
+                </div>
+                <div class="marquee_text">
+                    <span>Extraordinary Noodle</span>
+                    <span>Tasty</span>
+                    <span>Nutritional Complete</span>
+                    <span>Plant Based</span>
+                    <span>Super Convenient</span>
+                    <span>Healthy Planet</span>
+                    <span>Great Value</span>
+                    <span>Low Calorie</span>
+                    <span>miss 420</span>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+    <footer class="footer">
+        <div class="inner">
+            <ul class="customer">
+                <li><a href="" class="b">개인정보처리방침</a></li>
+                <li><a href="">찾아오시는길</a></li>
+                <li><a href="">채용안내</a></li>
+                <li><a href="">이메일무단수집거부</a></li>
+            </ul>
+
+            <ul class="info">
+                <li>주소 : 서울특별시 강동구 성내로 36(성내동 550-2) 예원빌딩 3층 (주)피알오지</li>
+            </ul>
+            <ul class="tel">
+                <li>TEL 02) 422-8222</li>
+                <li>FAX 02) 2291-8222</li>
+            </ul>
+            <address>&copy;JMInternational.Co, Ltd</address>
+
+        </div>
+    </footer>
+    <button class="to_top">
+        <img src="./images/chevron-up.svg" alt="">
+
+    </button>
+
+
+
+
+</body>
+
+</html>

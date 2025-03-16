@@ -1,0 +1,183 @@
+:root {
+    --primary-color: #c4001a;
+    --line-color: #ddd;
+    --b-color: #333;
+    --w-color: #fff;
+    --bg-color: #f9f9f9;
+
+    --inner-size: 1170px;
+}
+
+body {
+    font-size: 16px;
+    color: var(--b-color);
+}
+
+.inner {
+    max-width: var(--inner-size);
+    margin: 0 auto;
+}
+
+@media (max-width:1202px) {
+    .inner {
+        max-width: var(--inner-size);
+        margin: 0 auto;
+        /* r */
+        margin: 0 16px;
+
+    }
+}
+
+.default {
+    padding: 80px 0;
+}
+
+.default .title {
+    max-width: var(--inner-size);
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.default .title h2 {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.default .title .desc {
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 16px;
+
+}
+
+@media (max-width:1202px) {
+    .default .title {
+        max-width: var(--inner-size);
+        margin: 0 auto;
+        margin-bottom: 40px;
+
+        /* r */
+        margin: 0 16px;
+        margin-bottom: 40px;
+
+
+    }
+
+    .default .title h2 {
+        font-size: 36px;
+        font-weight: 600;
+
+
+    }
+
+    .default .title .desc {
+
+        font-size: 16px;
+        font-weight: 400;
+        margin-top: 16px;
+        line-height: 1.5;
+
+    }
+
+}
+
+button {
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
+.btn_default {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    padding: 16px 36px;
+
+    color: var(--w-color);
+    border-radius: 8px;
+    overflow: hidden;
+
+    border: 2px solid rgba(255, 255, 255, 0.5);
+
+
+}
+
+.btn_default::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    height: 0;
+    background: var(--primary-color);
+    transition: 0.4s;
+}
+
+.btn_default:hover:before {
+    top: auto;
+    bottom: 0;
+    height: 100%;
+}
+
+
+.btn_default::after {
+    content: "";
+    position: absolute;
+    inset: 0 0 0 0;
+    z-index: -2;
+    background: var(--b-color);
+}
+
+
+@media (max-width:768px) {
+
+    button {
+        font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    }
+
+    .btn_default {
+        position: relative;
+        z-index: 1;
+        display: inline-block;
+        padding: 8px 24px;
+
+        color: var(--w-color);
+        border-radius: 8px;
+        overflow: hidden;
+
+        border: 2px solid rgba(255, 255, 255, 0.5);
+
+        /* r */
+
+        margin: 24px 16px;
+
+
+    }
+
+    .btn_default::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: -1;
+        height: 0;
+        background: var(--primary-color);
+        transition: 0.4s;
+    }
+
+    .btn_default:hover:before {
+        top: auto;
+        bottom: 0;
+        height: 100%;
+    }
+
+
+    .btn_default::after {
+        content: "";
+        position: absolute;
+        inset: 0 0 0 0;
+        z-index: -2;
+        background: var(--b-color);
+    }
+}
